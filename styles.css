@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos básicos para el cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    padding-top: 20px;
+    font-size: 1rem; /* Mejorar la legibilidad */
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #004d99;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:focus {
+    outline: 2px solid #004d99; /* Asegura que el enlace tenga un foco visible */
+    outline-offset: 2px;
+}
+
+/* Estilos de las secciones */
+section {
+    padding: 20px;
+    margin: 15px;
+    background-color: #ffffff; /* Fondo blanco para contraste */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #004d99;
+    border-bottom: 2px solid #004d99; /* Agregar borde */
+    padding-bottom: 5px; /* Espacio entre texto y borde */
+}
+
+section p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+section ul {
+    padding-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para centrar la imagen */
+.imagen-secundaria {
+    display: block;
+    margin: 20px auto;  /* Centra la imagen */
+    max-width: 80%;  /* Limita el tamaño de la imagen a un máximo del 80% del contenedor */
+    height: auto;  /* Mantiene la proporción de la imagen */
+}
+
+/* Estilos para los miembros del equipo */
+.miembros {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.miembro {
+    text-align: center;
+    width: 150px;
+}
+
+.miembro img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.miembro p {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Estilos para el logo */
+.logo {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.logo img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #004d99;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;  /* Espacio superior para separarlo */
+}
+
+footer p {
+    font-size: 1rem;
+    color: white;
+}
+
+/* Estilos para los enlaces */
+a {
+    color: #004d99;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 1024px) {
+    .miembros {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .miembro {
+        margin-bottom: 20px;
+        width: 200px;
+    }
+
+    .logo img {
+        max-width: 150px;
+    }
+
+    .imagen-secundaria {
+        max-width: 100%;  /* Hace la imagen más grande en pantallas más pequeñas */
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    .miembros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .miembro {
+        margin-bottom: 20px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+
+    .imagen-secundaria {
+        max-width: 90%;  /* Hace la imagen un poco más grande */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+
+    .imagen-secundaria {
+        max-width: 100%;  /* Aseguro que la imagen sea lo más grande posible en pantallas muy pequeñas */
+    }
+}
